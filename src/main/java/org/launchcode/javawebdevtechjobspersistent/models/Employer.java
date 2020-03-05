@@ -11,10 +11,10 @@ public class Employer extends AbstractEntity {
     @Size(max = 50)
     private String location;
 
-    Employer () {
+    public Employer () {
     }
 
-    Employer(String location) {
+    public Employer(String location) {
         super();
         this.location = location;
     }

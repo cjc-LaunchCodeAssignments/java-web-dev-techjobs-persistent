@@ -1,16 +1,18 @@
 package org.launchcode.javawebdevtechjobspersistent.models;
 
-import javax.validation.constraints.Size;
+import javax.persistence.Entity;
 
+
+@Entity
 public class Skill extends AbstractEntity {
 
 
     private String longDescription;
 
-    Skill () {
+    public Skill () {
     }
 
-    Skill (String longDescription) {
+    public Skill (String longDescription) {
         super();
         this.longDescription = longDescription;
     }
