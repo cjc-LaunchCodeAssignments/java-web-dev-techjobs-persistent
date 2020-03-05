@@ -7,22 +7,22 @@ import javax.persistence.Entity;
 public class Skill extends AbstractEntity {
 
 
-    private String longDescription;
+    private String description;
 
     public Skill () {
     }
 
-    public Skill (String longDescription) {
+    public Skill (String description) {
         super();
-        this.longDescription = longDescription;
+        this.description = description;
     }
 
 
-    public String getLongDescription() {
-        return longDescription;
+    public String getDescription() {
+        return description;
     }
 
-    public void setLongDescription(String longDescription) {
-        this.longDescription = longDescription;
+    public void setDescription(String longDescription) {
+        this.description = longDescription;
     }
 }
