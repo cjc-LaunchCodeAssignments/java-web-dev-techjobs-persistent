@@ -1,4 +1,7 @@
 ## Part 1: Test it with SQL
+DESCRIBE job;
+--id, employer, name, skills
+
 
 ## Part 2: Test it with SQL
 
