@@ -53,6 +53,8 @@ public class HomeController {
         Optional<Employer> result = employerRepository.findById(employerId);
         if (errors.hasErrors()) {
             model.addAttribute("title", "Add Job");
+            model.addAttribute("employers", employerRepository.findAll());
+            model.addAttribute("skills", skillRepository.findAll());
             return "add";
         } else {
             if (result.isPresent()) {
